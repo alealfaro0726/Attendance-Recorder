@@ -1,0 +1,219 @@
+:root{
+    --dark:  #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --grey: #6B7280;
+    --light: #EEE;
+    --pink: #EC4899;
+    --purple: #8B5CF6;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira sans', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--dark);
+    color:white;
+}
+
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom:1rem;
+    color:var(--grey);
+}
+
+
+name-form{
+    display:flex;
+}
+
+input, button{
+    appearance: none;
+    border:none;
+    outline: none;
+    background:none;
+}
+
+#input-name{
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    width: 400px;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color:var(--light);
+    font-size: 1.25rem;
+}
+
+#input-name::placeholder{
+    color:var(--grey);
+}
+
+#addStudentBtn{
+    color:var(--pink);
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#addStudentBtn:hover{
+    opacity: 0.8;
+}
+#addStudentBtn::active{
+    opacity: 0.6;
+}
+
+main{
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width:800px;
+    width:100%;
+    margin: 0 auto;
+}
+
+.student-list{
+    padding:1rem;
+}
+.student-list h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color:var(--grey);
+    margin-bottom: 1rem ;
+}
+
+#students .student{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding:1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#students .student .content{
+    flex: 1 1 0%;
+}
+#students .student .content .text{
+    color:var(--light);
+    font-size: 1.125rem;
+    width:100%;
+    display:block;
+    transition: 0.4s;
+}
+
+#students .student .content .text:not(:read-only){
+    color:var(--pink);
+
+}
+#students .student .actions{
+    display: flex;
+    margin:0 -0.5rem;
+
+}
+
+.student .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.student .actions button:hover{
+    opacity: 0.8;
+}
+.student .actions button:active{
+    opacity: 0.6;
+}
+
+.student .actions .absent{
+    color:crimson
+}
+
+.student .actions .present{
+    color:green;
+}
+
+.ab{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.pres{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+#num-present, #num-absent{
+    margin-left: 10px;
+}
+
+#submit-btn{
+    width:180px;
+    margin-left: 50px;
+    height:40px;
+    background-color: #111827;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 17px;
+    color:#374151;
+    transition: all 0.3s ease;
+}
+
+#submit-btn:hover{
+    color:#111827;
+    background-color:wheat ;
+    cursor:pointer;
+
+}
+
+ #clear{
+    width:150px;
+    height:40px;
+    background-color: #111827;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 17px;
+    color:#374151;
+    transition: all 0.3s ease;
+} 
+
+#clear:hover{
+    color:#111827;
+    background-color:wheat ;
+    cursor:pointer;
+
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Attendance</title>
+</head>
+<body>
+    <header>
+        <h1>Attendance Recorder</h1>
+        <form id="name-form">
+            <input type="text" id = "input-name" placeholder = "Student Name">
+            <input type="submit" value = "Add Student" id = "addStudentBtn" >
+            
+        </form>
+        <div class="btns">
+            <input type="submit" value = "Clear All" id = "clear">
+            <input type="submit" value = "Submit Attendance" id = "submit-btn">
+        </div>   
+    </header>
+    
+
+    <main>
+        <section class="student-list">
+            <h2>Student</h2>
+
+            <div id="students">
+                    <!-- <div class="student">
+                    <div class="content">
+                        <input type = "text" class = "text" value = "My Student" readonly/>
+                    </div>
+                    <div class="actions">
+                        <button class="absent">Absent</button>
+                        <button class="present">Present</button>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+    <div class="ab">
+        <h2 >Absent: </h2>
+        <h2 id = "num-absent">0</h2>
+    </div>
+
+    <div class="pres">
+        <h2 class = "pres">Present: </h2>
+        <h2 id = "num-present">0</h2>
+    </div>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
